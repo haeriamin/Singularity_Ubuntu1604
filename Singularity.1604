@@ -40,6 +40,7 @@ From: ubuntu:16.04
     python-dev \
     rsync \
     tcl \
+    vim\
     wget
     
   apt-get install -y python3-dev git build-essential cmake make g++ libx11-dev
