@@ -40,20 +40,12 @@ From: ubuntu:16.04
     python-dev \
     rsync \
     tcl \
+    wget \
     vim\
-    wget
+    language-pack-en
     
   apt-get install -y python3-dev git build-essential cmake make g++ libx11-dev
-
-  mkdir -p /opt
-  curl -sL https://root.cern.ch/download/root_v6.14.00.Linux-ubuntu16-x86_64-gcc5.4.tar.gz | tar -C /opt -zxf -
 
   apt-get clean
   apt-get autoclean
   rm -rf /var/lib/apt/lists/*
-
-%environment
-  export ROOTSYS=/opt/root
-  export PATH=$ROOTSYS/bin:$PATH
-  export PYTHONPATH=$ROOTSYS/lib:$PYTHONPATH
-  export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
