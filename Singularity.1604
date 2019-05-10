@@ -65,4 +65,3 @@ From: ubuntu:16.04
   source ~/.bashrc
   ti install mpm
   source ~/.bashrc
-  
