@@ -45,17 +45,19 @@ From: ubuntu:16.04
     language-pack-en
 
   apt-get install -y python3-dev git build-essential cmake make g++ libx11-dev
+  pip install subprocess
 
   apt-get clean
   apt-get autoclean
   rm -rf /var/lib/apt/lists/*
 
+  cd ~
   wget https://github.com/haeriamin/files/blob/master/installTaichi.py
   python3 installTaichi.py
 
   wget https://github.com/haeriamin/files/blob/master/main.py
   yes | cp -rf ~/main.py ~/taichi/python/taichi
-  cd
+  cd ~
   rm -fr main.py
 
   cd ~/taichi/python/taichi
