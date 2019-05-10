@@ -3,7 +3,7 @@ From: ubuntu:16.04
 
 %labels
   Author Amin Haeri
-  
+
 %post
   apt-get update --fix-missing
   apt-get install -yq \
@@ -43,12 +43,22 @@ From: ubuntu:16.04
     wget \
     vim\
     language-pack-en
-    
+
   apt-get install -y python3-dev git build-essential cmake make g++ libx11-dev
 
   apt-get clean
   apt-get autoclean
   rm -rf /var/lib/apt/lists/*
-  
+
+  wget https://github.com/haeriamin/files/blob/master/installTaichi.py
+  python3 installTaichi.py
+
+  wget https://github.com/haeriamin/files/blob/master/main.py
+  yes | cp -rf ~/main.py ~/taichi/python/taichi
+  cd
+  rm -fr main.py
+
+  cd ~/taichi/python/taichi
   source ~/.bashrc
-  
+  ti install mpm
+  source ~/.bashrc
