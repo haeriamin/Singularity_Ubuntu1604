@@ -58,7 +58,6 @@ From: ubuntu:16.04
   cd ~
   wget https://github.com/haeriamin/files/blob/master/taichinstaller.py
   python3 taichinstaller.py
-  
 
   wget https://github.com/haeriamin/files/blob/master/main.py
   yes | cp -rf ~/main.py ~/taichi/python/taichi
