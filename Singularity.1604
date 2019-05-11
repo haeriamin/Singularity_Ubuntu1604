@@ -42,10 +42,11 @@ From: ubuntu:16.04
     tcl \
     wget \
     vim \
-    python3-pip \
     language-pack-en
 
   apt-get install -y python3-dev git build-essential cmake make g++ libx11-dev
+  apt-get install python-pip
+  apt-get install python3-pip
   pip install subprocess
 
   apt-get clean
@@ -64,4 +65,4 @@ From: ubuntu:16.04
   cd ~/taichi/python/taichi
   source ~/.bashrc
   ti install mpm
-  source ~/.bashrc 
+  source ~/.bashrc
