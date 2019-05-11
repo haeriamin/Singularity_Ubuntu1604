@@ -53,18 +53,18 @@ From: ubuntu:16.04
   apt-get autoclean
   rm -rf /var/lib/apt/lists/*
 
-  pip install subprocess.run
+  #pip install subprocess.run
 
-  cd ~
-  wget https://github.com/haeriamin/files/blob/master/taichinstaller.py
-  python3 taichinstaller.py
+  #cd ~
+  #wget https://github.com/haeriamin/files/blob/master/taichinstaller.py
+  #python3 taichinstaller.py
 
-  wget https://github.com/haeriamin/files/blob/master/main.py
-  yes | cp -rf ~/main.py ~/taichi/python/taichi
-  cd ~
-  rm -fr main.py
+  #wget https://github.com/haeriamin/files/blob/master/main.py
+  #yes | cp -rf ~/main.py ~/taichi/python/taichi
+  #cd ~
+  #rm -fr main.py
 
-  cd ~/taichi/python/taichi
-  source ~/.bashrc
-  ti install mpm
-  source ~/.bashrc
+  #cd ~/taichi/python/taichi
+  #source ~/.bashrc
+  #ti install mpm
+  #source ~/.bashrc
