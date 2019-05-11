@@ -42,9 +42,10 @@ From: ubuntu:16.04
     tcl \
     wget \
     vim \
-    language-pack-en \
     python-pip \
-    python3-pip
+    python3-pip \
+    language-pack-en
+
 
   apt-get install -y python3-dev git build-essential cmake make g++ libx11-dev
 
