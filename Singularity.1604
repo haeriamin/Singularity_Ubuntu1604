@@ -42,17 +42,18 @@ From: ubuntu:16.04
     tcl \
     wget \
     vim \
-    language-pack-en
+    language-pack-en \
+    python-pip \
+    python3-pip \
 
   apt-get install -y python3-dev git build-essential cmake make g++ libx11-dev
-  apt-get install python-pip
-  apt-get install python3-pip
-  pip install subprocess
 
   apt-get clean
   apt-get autoclean
   rm -rf /var/lib/apt/lists/*
 
+  pip install subprocess
+  
   cd ~
   wget https://github.com/haeriamin/files/blob/master/installTaichi.py
   python3 installTaichi.py
