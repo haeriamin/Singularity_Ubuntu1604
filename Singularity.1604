@@ -61,10 +61,12 @@ From: ubuntu:16.04
 
   #wget https://github.com/haeriamin/files/blob/master/main.py
   #yes | cp -rf ~/main.py ~/taichi/python/taichi
-  #cd ~
   #rm -fr main.py
 
   #cd ~/taichi/python/taichi
   #source ~/.bashrc
   #ti install mpm
   #source ~/.bashrc
+
+%post
+  chmod 755 /root
