@@ -13,7 +13,7 @@ From: ubuntu:18.04
     tcl \
     wget \
     vim \
-    python3.7 \
+    python3.7.9 \
     python3-pip \
     language-pack-en
 
