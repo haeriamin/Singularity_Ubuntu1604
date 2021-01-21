@@ -13,9 +13,11 @@ From: ubuntu:18.04
     tcl \
     wget \
     vim \
-    python3.7.9 \
+    python3.7 \
     python3-pip \
     language-pack-en
+
+  pip3 install --upgrade pip
 
   pip3 install \
     absl-py==0.10.0 \
@@ -54,7 +56,7 @@ From: ubuntu:18.04
     six==1.15.0 \
     sklearn==0.0 \
     tensorboard==1.15.0 \
-    tensorflow==1.15.4 \
+    tensorflow-gpu==1.15 \
     tensorflow-estimator==1.15.1 \
     tensorflow-probability==0.8.0 \
     termcolor==1.1.0 \
