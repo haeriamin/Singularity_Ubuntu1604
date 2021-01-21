@@ -94,7 +94,7 @@ From: ubuntu:16.04
     threadpoolctl==2.1.0 \
     Werkzeug==1.0.1 \
     wrapt==1.12.1 \
-    zipp==3.3.1
+    zipp==3.3.1 \
 
   apt-get clean
   apt-get autoclean
